@@ -1,1 +1,2 @@
-# go-helloworld
+# go-tests
+
