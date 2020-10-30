@@ -4,8 +4,13 @@ import (
 	"fmt"
 )
 
+var (
+	name = "Martin"
+)
+
 func Hello() string {
-	return "Hello world!"
+	greeting := "Hello"
+	return greeting + " " + name + "!"
 }
 
 func main() {

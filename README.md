@@ -2,6 +2,6 @@
 
 ## Usage
 ```sh
-go test -v ./src
+go test -v ./src/hello-world
 ```
 
