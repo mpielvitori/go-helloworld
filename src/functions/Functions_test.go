@@ -9,7 +9,7 @@ func TestFunctions(t *testing.T) {
 		}
 	}
 
-	t.Run("to a person", func(t *testing.T) {
+	t.Run("Get bigger number from a list", func(t *testing.T) {
 		got := GetBiggerNumber(1, 4, 2, 0, 3, 5, 8)
 		want := 0
 		assertCorrectMessage(t, got, want)
