@@ -5,13 +5,6 @@ import (
 	"time"
 )
 
-// func main() {
-// 	err := CountDownMultiple(5, "Rocket1", "Rocket2", "Rocket3")
-// 	if err != nil {
-// 		fmt.Println("Success")
-// 	}
-// }
-
 func CountDownMultiple(from int, rockets ...string) error {
 startBreak:
 	for _, rocket := range rockets {
