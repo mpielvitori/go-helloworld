@@ -23,3 +23,11 @@ func SumAllTails(numbersToSum ...[]int) []int {
 
 	return sums
 }
+
+func getProperties(numbers ...int) (int, int) {
+	numbersSlice := make([]int, 0, 6)
+	for _, num := range numbers {
+		numbersSlice = append(numbersSlice, num)
+	}
+	return len(numbersSlice), cap(numbersSlice)
+}

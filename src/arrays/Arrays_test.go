@@ -12,6 +12,17 @@ func assertCorrectMessage(t *testing.T, got, want interface{}) {
 	}
 }
 
+func TestDynamicSlice(t *testing.T) {
+
+	t.Run("test dynamic array", func(t *testing.T) {
+
+		length, capacity := getProperties(1, 2, 3, 4, 5, 6, 7)
+
+		assertCorrectMessage(t, length, 7)
+		assertCorrectMessage(t, capacity, 12)
+	})
+}
+
 func TestSum(t *testing.T) {
 
 	t.Run("collections of any size", func(t *testing.T) {
